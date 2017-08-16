@@ -34,12 +34,13 @@ listener = new YouTubePlayer.OnInitializedListener(){
             }
         };
 ```
-- 
+- btn으로 player 재생 
 ```java
  youtubeBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                youtubeView.initialize("AIzaSyAEkohC01b3wLgVJuv5gaTx3fd5JYgB8_4",listener);   // 키 값 넣어줌 
-            }
+                youtubeView.initialize("AIzaSyAEkohC01b3wLgVJuv5gaTx3fd5JYgB8_4",listener);   // 키 값 넣어줌, 초기화
+            후 player 세팅
+          }
         });
 ```
